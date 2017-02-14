@@ -9,6 +9,8 @@ if [ -n "$1" ] ;then
       echo '====='
     done
   echo 'updateTimeSpan complete'
+  git add . 
+  git commit -m 'update timespan(auto generate)'
 else
   echo "this repo's js & css has nothing changed, pass updateTimeSpan"
 fi
