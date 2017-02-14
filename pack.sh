@@ -5,10 +5,11 @@ if [ -n "$1" ] ;then
     for arg in $*
     do
       echo "processing: "$arg
+      sed -i "s/${arg}/lisi/g" `grep zhangsan -rl /modules`
     done
   echo "\033[32mupdateTimeSpan complete.\033[0m"
-  git add . 
-  git commit -m 'update timespan(auto generate)'
+  #git add . 
+  #git commit -m 'update timespan(auto generate)'
 else
   echo "\033[33mthis repo's js & css has nothing changed, pass updateTimeSpan\033[0m"
 fi
