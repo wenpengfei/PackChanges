@@ -1,7 +1,7 @@
 #!/bin/bash
 function updateTimeSpan(){
 if [ -n "$1" ] ;then
-  echo "\033[32m start updateTimeSpan... \033[0m"
+  echo "\033[32mstart updateTimeSpan... \033[0m"
     for arg in $*
     do
       echo '====='
