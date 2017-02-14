@@ -1,5 +1,4 @@
 #!/bin/bash
-
 function updateTimeSpan(){
 	echo 'start updateTimeSpan...'
 	  for arg in $*
@@ -16,8 +15,8 @@ function findChangedCSSAndScript(){
 }
 
 function zipAllChanges(){
- echo 'start zip...'
- echo 'done' 
+  echo 'start zip...'
+  echo 'done' 
 }
 
 findChangedCSSAndScript
