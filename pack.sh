@@ -1,5 +1,6 @@
 #!/bin/bash
 function updateTimeSpan(){
+if [ -n "$1" ] ;then
   echo 'start updateTimeSpan...'
     for arg in $*
     do
@@ -7,7 +8,10 @@ function updateTimeSpan(){
       echo $arg
       echo '====='
     done
-  echo 'updateTimeSpan complete' 
+  echo 'updateTimeSpan complete'
+else
+  echo "this repo's js & css is nothing changed, pass updateTimeSpan"
+fi
 }
 
 function findChangedCSSAndScript(){
