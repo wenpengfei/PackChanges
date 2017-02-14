@@ -4,7 +4,7 @@ if [ -n "$1" ] ;then
   echo "\033[32mstart updateTimeSpan...\033[0m"
     for arg in $*
     do
-      echo $arg
+      echo "processing file:"$arg
     done
   echo "\033[32mupdateTimeSpan complete.\033[0m"
   git add . 
