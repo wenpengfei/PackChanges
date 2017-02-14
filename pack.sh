@@ -10,7 +10,7 @@ if [ -n "$1" ] ;then
     done
   echo 'updateTimeSpan complete'
 else
-  echo "this repo's js & css is nothing changed, pass updateTimeSpan"
+  echo "this repo's js & css has nothing changed, pass updateTimeSpan"
 fi
 }
 
