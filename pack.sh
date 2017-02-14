@@ -5,7 +5,7 @@ if [ -n "$1" ] ;then
     for arg in $*
     do
       echo "processing: "$arg
-      sed -i "s/${arg}/lisi/g" `grep zhangsan -rl /modules`
+      sed -i "s/${arg}?v=/lisi/g" `grep ${arg}?v= -rl /modules`
     done
   echo "\033[32mupdateTimeSpan complete.\033[0m"
   #git add . 
