@@ -2,7 +2,7 @@
 function updateTimeSpan(){
   echo 'start updateTimeSpan...'
     for arg in $*
-		do
+    do
       echo '====='
       echo $arg
       echo '====='
