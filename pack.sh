@@ -1,13 +1,13 @@
 #!/bin/bash
 function updateTimeSpan(){
-	echo 'start updateTimeSpan...'
-	  for arg in $*
+  echo 'start updateTimeSpan...'
+    for arg in $*
 		do
-		  echo '====='
-		  echo $arg
-		  echo '====='
-	  done
-	echo 'updateTimeSpan complete' 
+      echo '====='
+      echo $arg
+      echo '====='
+    done
+  echo 'updateTimeSpan complete' 
 }
 
 function findChangedCSSAndScript(){
