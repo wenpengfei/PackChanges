@@ -1,7 +1,7 @@
 #!/bin/bash
 function updateTimeSpan(){
 if [ -n "$1" ] ;then
-  echo -e "\033[32m start updateTimeSpan... \033[0m"
+  echo "\033[32m start updateTimeSpan... \033[0m"
     for arg in $*
     do
       echo '====='
@@ -12,7 +12,7 @@ if [ -n "$1" ] ;then
   git add . 
   git commit -m 'update timespan(auto generate)'
 else
-  echo -e "\033[33m this repo's js & css has nothing changed, pass updateTimeSpan \033[0m"
+  echo "\033[33m this repo's js & css has nothing changed, pass updateTimeSpan \033[0m"
 fi
 }
 
