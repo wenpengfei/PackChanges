@@ -1,1 +1,1 @@
-test/files/a.css?v=123sss
+test/files/a.js?v=123ssssss
