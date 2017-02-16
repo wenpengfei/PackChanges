@@ -5,9 +5,6 @@ if [ -n "$1" ] ;then
     for arg in $*
     do
       echo "processing: "$arg
-      #sed -i "s#${arg}#df#g" `grep * -rl /Users/catwen/Documents/github/PackChanges`
-      #sed -i '' "s#${arg}#xxx#g" `grep test/a.js -rl /Users/catwen/Documents/github/PackChanges`
-      #sed -i '' "s#${arg}#xxx#g" test/index.aspx
       sed -i '' "s#${arg}?v=#${arg}?v=0#g" `grep $arg -rl *`
     done
   echo -e "\033[32mupdateTimeSpan complete.\033[0m"
