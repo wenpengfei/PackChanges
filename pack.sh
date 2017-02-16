@@ -5,7 +5,8 @@ if [ -n "$1" ] ;then
     for arg in $*
     do
       echo "processing: "$arg
-      sed -i '' "s#${arg}#df#g" `grep * -rl /Users/catwen/Documents/github/PackChanges`
+      #sed -i "s#${arg}#df#g" `grep * -rl /Users/catwen/Documents/github/PackChanges`
+      sed -i '' "s#${arg}#xxx#g" test/index.aspx
     done
   echo -e "\033[32mupdateTimeSpan complete.\033[0m"
   #git add . 
@@ -22,7 +23,7 @@ function findChangedCSSAndScript(){
 function zipAllChanges(){
   echo -e "\033[32mstart zip...\033[0m"
   git diff master origin/Develop --name-only | xargs zip `date '+%Y%m%d%H%M%S'.zip`
-  echo -e "\033[32mdone!\033[0m"
+  echo -e "\033[32msuccess!\033[0m"
 }
 
 findChangedCSSAndScript
