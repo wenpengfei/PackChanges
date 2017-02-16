@@ -6,7 +6,9 @@ if [ -n "$1" ] ;then
     do
       echo "processing: "$arg
       #sed -i "s#${arg}#df#g" `grep * -rl /Users/catwen/Documents/github/PackChanges`
-      sed -i '' "s#${arg}#xxx#g" test/index.aspx
+      #sed -i '' "s#${arg}#xxx#g" `grep test/a.js -rl /Users/catwen/Documents/github/PackChanges`
+      #sed -i '' "s#${arg}#xxx#g" test/index.aspx
+      sed -i '' "s#${arg}#xxx#g" test/index.html
     done
   echo -e "\033[32mupdateTimeSpan complete.\033[0m"
   #git add . 
@@ -17,7 +19,7 @@ fi
 }
 
 function findChangedCSSAndScript(){
-  updateTimeSpan $(git diff origin/Develop --name-only -- '*.js' '*.css')
+  updateTimeSpan $(git diff master develop --name-only -- '*.js' '*.css')
 }
 
 function zipAllChanges(){

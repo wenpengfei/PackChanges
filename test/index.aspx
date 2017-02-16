@@ -1,16 +1,5 @@
-xxx
-==
-xxx
----------------
-xxx
-==
-xxx
----------------
-xxx
-==
-xxx
----------------
-xxx
-==
-xxx
----------------
+  adding: pack.sh (deflated 55%)
+  adding: test/a.js (stored 0%)
+  adding: test/files/a.js (deflated 11%)
+  adding: test/files/index.aspx (deflated 7%)
+  adding: test/index.aspx (stored 0%)
