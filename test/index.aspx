@@ -1,5 +1,5 @@
   adding: pack.sh (deflated 55%)
-  adding: test/a.js?v=00012 (stored 0%)
-  adding: test/files/a.js?v=00012 (deflated 11%)
+  adding: test/a.js?v=0pppppp00012 (stored 0%)
+  adding: test/files/a.js?v=0pppppp00012 (deflated 11%)
   adding: test/files/index.aspx?v=12 (deflated 7%)
   adding: test/index.aspx?v=12 (stored 0%)
